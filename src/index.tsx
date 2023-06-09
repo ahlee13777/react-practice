@@ -5,6 +5,13 @@ import './index.css';
 import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
+import Parent from './components/ContainerSample'
+import Page from './components/ContextSample'
+import Counter from './components/Counter'
+import Counter2 from './components/CounterReducer';
+import Parent2 from './components/Parent';
+import Parent3 from './components/ParentCallback';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -15,6 +22,12 @@ root.render(
     <Hello />
     <Name />
     <Message />
+    <Parent />
+    <Page />
+    <Counter initialValue={0}/>
+    <Counter2 initialValue={0}/>
+    <Parent2 />
+    <Parent3 />
   </React.StrictMode>
 );
 
